@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="mib" lang="it">
+<head>
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0045a6">
+
+	<meta name="apple-mobile-web-app-title" content="Messaggio in Bottiglia">
+	<meta name="application-name" content="Messaggio in Bottiglia">
+	<meta name="theme-color" content="#ffffff">
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<base href="/">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="stylesheets/main.css">
+
+	<title>Messaggio in Bottiglia</title>
+</head>
+
+<body>
+	<div id="bg-img"></div>
+
+	<nav class="navbar navbar-toggleable-md fixed-top">
+
+		<span class="navbar-brand">Messaggio in Bottiglia</span>
+
+		<button data-toggle="collapse" data-target="#topbar" class="navbar-toggler navbar-toggler-right"><i id="navbar-menu-icon" class="fa fa-bars"></i></button>
+
+		<div id="topbar" class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li id="about" class="nav-item nav-element-outline"><a href="/about" class="nav-link"><i class="fa fa-address-card-o"></i>Chi Siamo</a></li>
+
+				<li id="reportbug" class="nav-item nav-element-outline"><a href="/report-bug" class="nav-link"><i class="fa fa-bug"></i>Segnala un bug</a></li>
+
+				<li id="question" class="nav-item nav-element-outline active"><a href="/question" class="nav-link"> <i class="fa fa-question"></i>Domanda Qualcosa</a></li>
+
+			</ul>
+		</div>
+	</nav>
+
+	<div class="viewblock">
+		<div ng-view onload="ctrl.init()"></div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-messages.min.js"></script>
+	<script src="components/app.js"></script>
+</body>
+</html>

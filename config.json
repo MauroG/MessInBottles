@@ -1,0 +1,43 @@
+{
+    //
+    // Root directories containing the scenes
+    //
+
+    "scenes": {
+        "root": [ "/home/miocorr/Jrc/Scenes/Scenes", "D:/Jrc/Scenes/Scenes" ]
+    },
+
+    //
+    // Configuration for 'sensor'
+    //
+    // The filesystem structure is the following:
+    //
+    //  <sensor.root>                       directory
+    //      <category>                      directory
+    //          <sensor_name>               directory
+    //              <sensor_name>.xml       XML file with sensor metadata
+    //              <band_name>             band response. Two columns: <wavelength> <response>
+    //
+    "sensors": {
+        "root": [
+            "/home/miocorr/Jrc/Scenes/IESDatabase/Spectral",
+            "D:/Jrc/Scenes/IESDatabase/Spectral"
+        ]
+    },
+
+    "spectrals": {
+        "root": [
+            "/home/miocorr/Jrc/Scenes/IESDatabase/Spectral",
+            "D:/Jrc/Scenes/IESDatabase/Spectral"
+        ]
+        // ,
+        // "categories": [
+        //     "Extended",
+        //     "RAMI",
+        //     "Soil",
+        //     "Trees",
+        //     "Understory",
+        //     "Scene"
+        // ]
+    }
+}
